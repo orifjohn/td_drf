@@ -19,11 +19,45 @@
 		  font-family: 'Montserrat', sans-serif;
 
 		}
+
+		#task-container{
+		  max-width:600px;
+		  margin:0 auto;
+		  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		  background-color: #fff;
+		  
+		  margin-top:100px;
+		  margin-bottom:100px;
+
+		  justify-content: space-around;
+		  align-items: flex-start;
+
+		}
 	</style>
 </head>
 <body>
+	<div class="container">
 
-	<h3>Hello my dear</h3>
+			<div id="task-container">
+				<div id="form-wrapper">
+					<form id="form">
+						<div class="flex-wrapper">
+							<div style="flex: 6">
+								<input id="title" class="form-control" type="text" name="title" placeholder="Add task">
+							</div>
+							<div style="flex: 1">
+								<input id="submit" class="btn" type="submit" >
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div id="list-wrapper">
+				
+				</div>	
+			</div>
+
+		</div>
 
 </body>
 </html>
